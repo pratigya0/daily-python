@@ -31,7 +31,7 @@ print(f"odd: {odd}")'''
 odd = [num for num in numbers if num % 2 != 0]
 
 print(f"even: {even}")
-print(f"odd: {odd}")'''
+print(f"odd: {odd}")
 
 
 for i in range(1, 6):
@@ -40,4 +40,16 @@ for i in range(1, 6):
 
         print("*", end=" ")
 
-    print()
+    print()'''
+
+
+n = 153
+result = 0
+
+for i in str(n):
+    result += int(i) ** 3      # cube karo!
+
+if result == n:      # compare karo!
+    print("Armstrong")
+else:
+    print("Not Armstrong")
