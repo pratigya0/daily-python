@@ -6,3 +6,7 @@ print(words)
 
 print(len(words))    # count items in list
 # 6
+
+#count
+sentence = "I love Python programming"
+print(len(sentence.split()))  # one liner! 😎

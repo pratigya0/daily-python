@@ -53,3 +53,7 @@ if result == n:      # compare karo!
     print("Armstrong")
 else:
     print("Not Armstrong")
+
+
+string = "  Hello World  "
+print(string.strip(""))
