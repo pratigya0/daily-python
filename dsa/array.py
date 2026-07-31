@@ -6,7 +6,7 @@ print(vals)
 for i in range(5):     #to print one by one
     print(vals[i])
 
-newArr = array(vals.typecode, (a for a in vals))   #created new array
+newArr = array(vals.typecode, (a*a for a in vals))   #created new array, * use to square the number
 print(newArr.append(9))   # add new number
 
 for e in newArr:
