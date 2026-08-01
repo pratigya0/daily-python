@@ -1,3 +1,4 @@
+#created linked list
 class Node:
     def __init__(self, data):
         self.data = data
@@ -14,6 +15,40 @@ node2.next = node3
 node3.next = node4
 
 current = node1
+while current is not None:
+    print(current.data, end ="->")
+    current = current.next 
+
+print("None")
+
+
+
+###################################
+#adding new node in front
+###################################
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None 
+# creating nodes
+node1 = Node(10)
+node2 = Node(20)
+node3 = Node(30)
+node4 = Node(40)
+
+#creating nodes to form linked list
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+head = node1
+new_node = Node(50)
+new_node.next = head
+head = new_node
+
+current = head
 while current is not None:
     print(current.data, end ="->")
     current = current.next 
